@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'montserrat-light';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{margin: 0; padding: 0;font-family: 'montserrat-light';}
+header{background: #eeedef;height: 170px;/* width: 100%; */}
+.add-outer{background: #d8d8d8;margin-top: -195px;height: 483px;}
+.add-block{background: #FFF;border-bottom: 10px solid #0165a7;color: #0165a7;padding: 20px;font-weight: 700;font-size: 22px;line-height: 28px;letter-spacing: 1px;top: 60px;left: 42%;position: absolute;width: 290px;}
+.block-sections{margin-top: 89px;}
+.row-wrap{clear: both;padding-left: 150px;}
+.container{width: 1200px;display:block;margin:0 auto;}
+.span-4{width: 33%;float: left;position: relative;}
+.span-2{width: 18%;float: left;padding: 0 20px;border-right: 1px dashed #CCC;}
+.span-2:nth-child(3){border-right:0;}
+.span-2 p{font-size: 17px;line-height: 25px;padding: inherit;}
+.foo{background: #d8d8d8;widows: 100%;height: 128px;margin: 10px;}
+.head{background: #0165a7;padding: 10px;color: #FFF;font-size: 18px;line-height: 23px;padding-right: 53px;}
+#inline_content{padding: 0!important;}
+#inline_content p{padding: 10px 30px}
+
+@media only screen and (max-width: 768px) {
+    .container {
+    width: 100%;}
+    
+	.row-wrap {padding: 30px;}
+	.span-2 {
+    padding: 0;
+}
+.add-block {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 23px;
+    top: initial;
+    left: 0;
+    bottom: -26px;
+    position: absolute;
+    width: 250px;
+}.span-4 {
+width: 46%;}
+.block-sections {
+   margin-top: -147px;
+   width: 48%;
+   float: left;
+   /* padding-left: 21px; */
+   padding: 17px;
+   background: #FFF;
+}
+.span-2{width:100%;border-bottom: 1px dashed #CCC;margin-bottom: 10px;border-right: 0;}
+
+.span-2 {}
+.span-2:nth-child(3){border-bottom:0;}
+.foo {
+    background: #d8d8d8;
+    width: 30%;
+    height: 79px;
+    margin: 10px;
+    float: right;
+    }
+.span-2 p {
+    
+float: left;
+    
+width: 63%;
+}
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	[class*="span-"] {
+        width: 100%;
+    }
+	.add-block {
+    
+    top: initial;
+    left: initial;
+    bottom: 75px;
+    right: 0;
+   
+}
+.row-wrap {
+    padding: 0;
+}
+header{display: none;}
+.add-outer {
+    margin-top: 0;
+    height: 242px;
+}
+	.block-sections {
+    margin-top: 0;width: 85%;padding: 30px;}
+	.span-2:nth-child(3) {
+    border-bottom: 1px dashed #CCC;
+}
+}
+
+
+@media only screen and (max-width: 320px) {
+	.span-2 p {
+    font-size: 14px;
+    line-height: 22px;}
+	.foo {
+    background: #d8d8d8;
+    width: 29%;}
+	
+}
