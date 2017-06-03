@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ranga</title>
-        <!-- Bootstrap -->
-        <link href="css/style.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/modal.css" />
-    </head>
-    <body>
-	
-	
-	<div class="container">
-	<header>		
-	</header>
-	<div class="row-wrap">
-		<div class="span-4 add-outer">
-			<a class='inline' href="#inline_content"><div class="add-block">
-				Ad Blockers: Setback or Spark for Innovation?
-			</div>
-			</a>
-		</div>
-		<div class="block-sections">
-		<div class="span-2">
-			<p>The real reason why making money with online media is hard</p>
-			<div class="foo">
-			</div>
-		</div>
-		<div class="span-2">
-			<p>How Montherly Uses Personalization to Create Enagagement</p>
-			<div class="foo">
-			</div>
-		</div>
-		<div class="span-2">
-			<p>Fixing email overload, and now chat overload, for content teams </p>
-			<div class="foo">
-			</div>
-		</div>
-		</div>
-	</div>
-	</div>
-	
-	
-	
-			<div style='display:none'>
-			<div id='inline_content' style='padding:10px; background:#fff;'>
-			<div class="head">Ad Blockers: Setback or Spark for Innovation?</div>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-			
-			</div>
-		</div>
-		
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/jquery.modal.js"></script>
-<script>	
-$(document).ready(function(){
-$(".inline").colorbox({inline:true, width:"50%"});
-});
-</script>
-</body>
-</html> 
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Ranga</title>
+      <!-- Bootstrap -->
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/modal.css" />
+   </head>
+   <body>
+      <div class="container">
+         <header>		
+         </header>
+         <div class="row-wrap">
+            <div class="span-4 add-outer">
+               <a class='inline' href="#inline_content">
+                  <div class="add-block">
+                     Ad Blockers: Setback or Spark for Innovation?
+                  </div>
+               </a>
+            </div>
+            <div class="block-sections">
+               <div class="span-2">
+                  <p>The real reason why making money with online media is hard</p>
+                  <div class="foo">
+                  </div>
+               </div>
+               <div class="span-2">
+                  <p>How Montherly Uses Personalization to Create Enagagement</p>
+                  <div class="foo">
+                  </div>
+               </div>
+               <div class="span-2">
+                  <p>Fixing email overload, and now chat overload, for content teams </p>
+                  <div class="foo">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style='display:none'>
+         <div id='inline_content' style='padding:10px; background:#fff;'>
+            <div class="head">Ad Blockers: Setback or Spark for Innovation?</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/jquery.modal.js"></script>
+      <script>	
+         $(document).ready(function(){
+         $(".inline").colorbox({inline:true, width:"50%"});
+           if($(window).width() < 767){
+           	$(".inline").colorbox({inline:true, width:"80%"});
+     	 }
+         });
+      </script>
+   </body>
+</html>
